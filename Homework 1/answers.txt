@@ -1,0 +1,10 @@
+7.5- The relation ship between F and Ts is that when as Ts decreases the range of F also decreases
+	The larger N is the narrower the peak is. When N gets larger then the peaks settle at +- 100 Hz.
+7.6- The spectrum of sin^2 is rom - 200 Hz to +200 Hz. The spectrum of sin^3 is from -300 Hz to + 300 Hz.
+7.7- the spectrum of the sinc function is a magnitude of 3.8 with peaks at +- 315 Hz.The spectrum of sinc^2 .3 magitude with 3 peaks
+7.8- specsin2 was used as it gave symetry
+7.9- The spectrum for all of them is 2 peaks at +- 100 Hz with a magnitude of about 388.
+	The spectrum when it is squared is 3 peaks with one at 0 with magnitude of about 512 then two peaks a t +- 200 Hz with magnitudes of about 240 Hz.
+7.10- When only analyzing .1 seconds one can see the individual peaks and valleys of the signal.
+7.11 One can see the magnitudes better
+7.13 they are visually similar 
