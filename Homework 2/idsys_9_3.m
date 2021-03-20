@@ -6,8 +6,7 @@ str='01234 I wish I were an Oscar Meyer wiener 56789';
 m=letters2pam(str); N=length(m); % 4-level signal of length N
 % zero pad T-spaced symbol sequence to create upsampled
 % T/M-spaced sequence of scaled T-spaced pulses (T=1)
-oversampling_facgtor = [1000, 25, 10];
-M=oversampling_facgtor(2);    % oversampling factor
+M=25;                         % oversampling factor
 mup=zeros(1,N*M);             % Hamming pulse filter with 
 mup(1:M:N*M)=m;               % T/M-spaced impulse response
 p=hamming(M);                 % blip pulse of width M
@@ -22,10 +21,10 @@ r=c.*x;                       % modulate message with carrier
 % am demodulation of received signal sequence r
 c2=cos(2*pi*fc*t);             % synchronized cosine for mixing
 x2=r.*c2;                      % demod received signal
-fl=50; fbe=[0 0.1 0.2 1];      % LPF parameters 
+fl=50; %fbe=[0 0.1 0.2 1];      % LPF parameters 
 damps=[1 1 0 0 ]; 
 b=firpm(fl,fbe,damps);         % create LPF impulse response
-x3=2*filter(b,1,x2);           % LPF and scale signal
+%x3=2*filter(b,1,x2);           % LPF and scale signal
 % extract upsampled pulses using correlation implemented 
 % as a convolving filter; filter with pulse and normalize
 y=filter(fliplr(p)/(pow(p)*M),1,x3);

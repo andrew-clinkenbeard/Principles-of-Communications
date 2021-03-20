@@ -1,9 +1,10 @@
-9.1
+9.1-- The limiting factor is that the lower frequencies the message is not able to be reconstructed do to the level of the soft decision to be less than 3 producing a lot of errors. 
 
-9.2
+9.2-- The limiting factor is that at the lower oversampling factorsit cause the level of the soft decision to be less than 3 producing lots of errors.
 
-9.3
+9.3-- With the LPF removed it causes the signal to not fully getting through making the last 2 signals not get through.
+	 Adding another user would add noise that would cause the message to not be identifiable.
 
-9.4 
+9.4-- 3 is the lowest frequency that works and still producese the correct message. 250 still produces a correct message but it is now missing 2 symbols not just 1 
 
-9.5
+9.5-- You cannot change the length as it will make the signal cutoff making the message not come through.
