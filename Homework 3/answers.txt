@@ -1,0 +1,19 @@
+11.3-see graphs
+
+11.4- rectangular pulse-5
+hamming pulse-30
+sinc pulse- 3
+
+12.1-
+a. values of mu 1>mu>=.0008
+b. the other sigals had better convergent values of tau
+
+
+12.2
+	ssrc works much better than a regtangular pulse
+12.3
+	it increases the timing of the tau value
+	it changes the final converged value slightly
+	
+13.1
+13.2
